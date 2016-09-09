@@ -1,3 +1,9 @@
+
+@font-face{
+	font-family: comical;
+	src: url('../fonts/animeace2_reg.otf');
+}
+
 body {
 	background-color:black;
 }
@@ -17,12 +23,12 @@ main {
 	height: 494px;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	width:659px;
 	height:494px;
 }
 
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
 	display:none;
 }
 
@@ -41,7 +47,11 @@ main {
 
 }
 
-.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+.ryu-cool {
+	background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
 	background-repeat: no-repeat;
 }
 
@@ -55,4 +65,22 @@ main {
 	z-index: 10;
 	top:167px;
 	left:520px;
+}
+
+.text-container {
+	width:500px;
+	height:100%;
+	position:absolute;
+	right:100px;
+	top:0px;
+}
+
+.text-container h3 {
+	width:150px;
+	font-family:comical;
+}
+
+.key-text {
+	margin-left: 350px;
+	margin-top: 200px;
 }
